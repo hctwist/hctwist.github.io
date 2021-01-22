@@ -5,13 +5,12 @@
 #display-text {
     position: fixed;
     display: flex;
-
     flex-direction: column;
+
+    gap: 48px;
 }
 
 #main-display-text {
-    margin-bottom: 48px;
-
     font-size: 5.5em;
     font-family: "Lato", sans-serif;
 }
@@ -19,14 +18,15 @@
 #main-display-text span {
     font-family: inherit;
     color: var(--primary-color);
-    text-shadow: 0 0 32px var(--primary-color);
 }
 
 #sub-display-text p {
-    margin-top: 8px;
-
     font-size: 1.25em;
     color: var(--text-color-secondary);
+}
+
+#sub-display-text p:not(:first-child) {
+    margin-top: 8px;
 }
 
 #timeline {
@@ -81,8 +81,6 @@
 
 .event .panel {
     flex: 1;
-
-    padding: 16px 24px;
 }
 
 .event .content {
@@ -115,10 +113,18 @@
         justify-content: center;
     }
 
+    #main-display-text {
+        font-size: 4rem;
+    }
+
     #timeline {
         width: 100%;
         left: 0;
         margin-top: 96px;
+    }
+
+    #sub-display-text p {
+        font-size: 1rem;
     }
 }
 
@@ -126,11 +132,7 @@
 
     #display-text {
         flex-direction: row;
-        align-items: baseline;
-    }
-
-    #sub-display-text {
-        margin-left: 64px;
+        align-items: center;
     }
 }
 
@@ -152,17 +154,12 @@
         align-items: center;
     }
 
-    #main-display-text {
-        font-size: 4rem;
-
-        margin-bottom: 16px;
-    }
 
     #sub-display-text {
         text-align: center;
     }
 
     #sub-display-text p {
-        font-size: 1rem;
+        display: inline-block;
     }
 }

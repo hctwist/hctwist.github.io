@@ -34,7 +34,7 @@ Breakpoints:
 
 @media (max-width: 1200px) {
     :root {
-        --layout-margin-top: 96px;
+        --layout-margin-top: 72px;
     }
 }
 
@@ -79,6 +79,7 @@ h3 {
 
 /* Panel */
 .panel, .panel-subtle {
+    padding: 16px 24px;
     border-radius: var(--corner-radius);
 }
 a.panel, a.panel-subtle {

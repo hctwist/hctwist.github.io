@@ -61,10 +61,6 @@
     vertical-align: middle;
 }
 
-#about-details .panel {
-    padding: 16px 32px;
-}
-
 #about-summary {
     margin-top: var(--content-margin);
 }
