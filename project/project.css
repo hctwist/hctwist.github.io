@@ -1,0 +1,59 @@
+#project-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: var(--layout-margin-top);
+}
+
+#project-header h3 {
+    margin-top: 16px;
+}
+
+#project-heading, .status-tag {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#project-heading-container .status-tag {
+    margin-left: 32px;
+}
+
+#project-banner {
+    height: 448px;
+    margin-top: var(--content-margin);
+}
+
+#project-banner img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#project-content {
+    margin-top: var(--content-margin);
+
+    padding-bottom: var(--layout-margin-bottom);
+}
+
+#project-sources {
+    display: flex;
+    justify-content: center;
+
+    margin-top: var(--content-margin);
+    gap: var(--standard-margin);
+}
+
+#project-skills {
+    display: flex;
+    justify-content: center;
+
+    margin-top: var(--content-margin);
+    gap: var(--standard-margin);
+}
+
+#project-skills .skill {
+    width: 32px;
+    height: 32px;
+
+    opacity: var(--icon-opacity);
+}

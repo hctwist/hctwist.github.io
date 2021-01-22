@@ -1,0 +1,40 @@
+.main-content-grid {
+    margin-top: var(--layout-margin-top);
+}
+
+.project {
+    --projects-padding: 24px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 16px;
+    margin-left: calc(-1 * var(--projects-padding));
+    margin-right: calc(-1 * var(--projects-padding));
+    padding: var(--projects-padding);
+
+    border-radius: var(--corner-radius);
+    text-decoration: none;
+
+    transition: background-color var(--transition-duration-panel);
+}
+
+.project-heading {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-heading, .status-tag {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.status-tag {
+    margin-left: 32px;
+}
+
+.project-subheading {
+    margin-top: 16px;
+}
