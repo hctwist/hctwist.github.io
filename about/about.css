@@ -35,8 +35,14 @@
 
 .labelled-icon {
     display: block;
+    box-sizing: border-box;
 
+    width: 100%;
     margin-top: 16px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .labelled-icon img {

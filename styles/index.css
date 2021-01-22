@@ -12,7 +12,7 @@
 #main-display-text {
     margin-bottom: 48px;
 
-    font-size: 86px;
+    font-size: 5.5em;
     font-family: "Lato", sans-serif;
 }
 
@@ -119,20 +119,36 @@
 
     #display-text {
         position: static;
-        flex-direction: row;
-        align-items: baseline;
+
         justify-content: center;
-
-        margin: 0 auto;
-    }
-
-    #sub-display-text {
-        margin-left: 64px;
     }
 
     #timeline {
         width: 100%;
         left: 0;
         margin-top: 96px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    #display-text {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #sub-display-text {
+        margin-left: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #display-text {
+        align-items: center;
+    }
+
+    #sub-display-text {
+        text-align: center;
     }
 }
