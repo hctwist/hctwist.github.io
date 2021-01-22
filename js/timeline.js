@@ -23,7 +23,7 @@ function setDateWidths() {
 
 function setMargins() {
 
-    if(window.matchMedia("(max-width: 1600px)").matches) {
+    if(window.matchMedia("(max-width: 700px)").matches) {
 
         if(!oneColumn) {
             oneColumn = true;

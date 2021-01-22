@@ -1,9 +1,9 @@
 /*
 
 Breakpoints:
-1600px
-1200px
-700px
+1600px - value changes
+1200px - layout changes
+700px - mobile changes
 
 */
 
@@ -32,15 +32,18 @@ Breakpoints:
     --transition-duration-shape: 250ms;
 }
 
+@media (max-width: 1200px) {
+    :root {
+        --layout-margin-top: 96px;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
 
     color: var(--text-color-primary);
     font-family: "Open Sans", sans-serif;
-}
-html {
-    /* overflow-y: scroll; */
 }
 body {
     background-color: #1c1e1d;
@@ -60,10 +63,6 @@ h3 {
 }
 ::selection {
     background-color: var(--secondary-color);
-}
-
-.scrollbar-fix {
-    padding-left: calc(100vw - 100%);
 }
 
 /* Grid */
@@ -182,4 +181,10 @@ a.panel:hover, a.panel-subtle:hover {
 }
 #main-header ul li a:hover::after {
     opacity: 1;
+}
+@media (max-width: 700px) {
+
+    #main-header {
+        margin-top: 7.5vw;
+    }
 }
