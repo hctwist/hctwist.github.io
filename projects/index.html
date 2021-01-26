@@ -13,7 +13,7 @@
         <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-        <title></title>
+        <title>Projects | Henry Twist</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -25,45 +25,70 @@
 
         <header id="main-header" class="main-content-grid">
 
-            <a href="/"><img src="/images/logo.png" /></a>
+            <a id="main-logo" href="/"><img src="/images/logo.png" /></a>
 
-            <nav>
-                <ul>
-                    <li><a href="/about">ABOUT</a></li>
-                    <!-- <li><a href="/projects">PROJECTS</a></li> -->
-                </ul>
-            </nav>
+            <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" /></button>
+
+            <div id="main-navigation">
+
+                <nav>
+                    <ul>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                    </ul>
+                </nav>
+
+                <div id="main-links">
+
+                    <a href="mailto:henrytwistprojects@gmail.com">
+
+                        <img src="/images/icons/email.png" />
+                    </a>
+
+                    <a href="https://github.com/hctwist" target="_blank">
+
+                        <img src="/images/icons/github.png" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+
+                        <img src="/images/icons/linkedin.png" />
+                    </a>
+                </div>
+            </div>
         </header>
 
         
 <div class="main-content-grid">
 
-    <div id="projects-container"><a class="project panel-subtle" href="/project/project-acquiesce/">
-                <div>
-                    <h2 class="project-heading">Project Acquiesce</h2><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3 class="project-subheading">TEST</h3>
-                </div></a><a class="project panel-subtle" href="/project/fullcart/">
-                <div>
-                    <h2 class="project-heading">FullCart</h2><p class="status-tag status-tag-released">RELEASED</p>
-<h3 class="project-subheading">&nbsp;</h3>
-                </div></a><a class="project panel-subtle" href="/project/project-barry/">
-                <div>
-                    <h2 class="project-heading">Ray</h2><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3 class="project-subheading">PROJECT BARRY</h3>
-                </div></a><a class="project panel-subtle" href="/project/project-phoenix/">
-                <div>
-                    <h2 class="project-heading">Weekly</h2><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3 class="project-subheading">PROJECT PHOENIX</h3>
-                </div></a><a class="project panel-subtle" href="/project/project-consolidate/">
-                <div>
-                    <h2 class="project-heading">henrytwist.uk</h2><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3 class="project-subheading">PROJECT CONSOLIDATE</h3>
-                </div></a><a class="project panel-subtle" href="/project/dissertation/">
-                <div>
-                    <h2 class="project-heading">Optimisation of Neural Network Architecture</h2><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3 class="project-subheading">&nbsp;</h3>
-                </div></a></div>
+    <div id="projects-container"><a class="panel" href="/project/project-acquiesce/">
+
+                <div class="project-banner">
+
+                    <img src="/images/projects/acquiesce/banner.jpg" />
+                </div>
+
+                <h2 class="project-heading">Project Acquiesce</h2>
+
+                <div class="project-extras">
+                    <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-ongoing">ONGOING</p>
+</div></a><a class="panel" href="/project/fullcart/">
+
+                <div class="project-banner">
+
+                    <img src="/images/projects/fullcart/banner.jpg" />
+                </div>
+
+                <h2 class="project-heading">FullCart</h2>
+
+                <div class="project-extras">
+                    <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-released">RELEASED</p>
+</div></a></div>
 </div>
 
+
+        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
+
+        <script src="/js/hamburger.js"></script>
     </body>
 </html>

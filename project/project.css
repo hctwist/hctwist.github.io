@@ -1,46 +1,43 @@
-#project-header {
+#project-header-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 32px;
 
     margin-top: var(--layout-margin-top);
 }
 
-#project-header h3 {
-    margin-top: 16px;
-}
-
-#project-heading, .status-tag {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#project-heading-container .status-tag {
-    margin-left: 32px;
-}
-
-#project-banner {
-    height: 448px;
-    margin-top: var(--content-margin);
-}
-
-#project-banner img {
-    display: block;
-    height: 100%;
-    margin: 0 auto;
-}
-
 #project-content {
-    margin-top: var(--content-margin);
+    margin-top: 48px;
+}
 
-    padding-bottom: var(--layout-margin-bottom);
+#project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: var(--content-margin);
+    gap: 2vw;
+}
+
+#project-images img {
+    width: 100%;
+}
+
+.banner {
+    grid-column: 1 / span 2;
 }
 
 #project-sources {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
-    margin-top: var(--content-margin);
     gap: var(--standard-margin);
+}
+
+#project-sources:not(:empty) {
+    margin-top: var(--content-margin);
 }
 
 #project-skills {
@@ -48,6 +45,7 @@
     justify-content: center;
 
     margin-top: var(--content-margin);
+    margin-bottom: var(--layout-margin-bottom);
     gap: var(--standard-margin);
 }
 

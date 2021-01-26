@@ -1,16 +1,10 @@
-.main-content-grid {
+#home-root {
     margin-top: var(--layout-margin-top);
 }
 
-#display-text {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-
-    gap: 48px;
-}
-
 #main-display-text {
+    text-align: center;
+
     font-size: 5.5em;
     font-family: "Lato", sans-serif;
 }
@@ -20,13 +14,35 @@
     color: var(--primary-color);
 }
 
+#sub-display-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 32px;
+    margin-top: 32px;
+}
+
 #sub-display-text p {
-    font-size: 1.25em;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+}
+
+#sub-display-text .prefix {
     color: var(--text-color-secondary);
 }
 
-#sub-display-text p:not(:first-child) {
-    margin-top: 8px;
+#sub-display-text .suffix {
+    text-align: center;
+
+    padding: 8px 16px;
+    min-width: 12em;
+
+    color: rgba(0, 0, 0, 0.95);
+    border-radius: var(--corner-radius);
+    background: var(--primary-color);
 }
 
 #timeline {
@@ -34,8 +50,9 @@
 
     position: relative;
 
-    width: 65%;
-    left: 35%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: var(--content-margin);
     padding-bottom: var(--layout-margin-bottom);
 }
 
@@ -58,7 +75,7 @@
 
     left: 50%;
     transform: translateX(-50%);
-    padding: 6px 16px;
+    padding: 8px 24px;
 
     font-family: "Lato", sans-serif;
     font-size: 1.125em;
@@ -93,34 +110,26 @@
 
 .event .pipe {
     height: var(--pipe-width);
-    width: 128px;
+    width: 20%;
 
     background-color: var(--panel-color);
 }
 
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
 
-    .event .pipe {
-        width: 72px;
+    #timeline {
+        width: 90%;
     }
 }
 
 @media (max-width: 1200px) {
 
-    #display-text {
-        position: static;
-
-        justify-content: center;
-    }
-
     #main-display-text {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     #timeline {
         width: 100%;
-        left: 0;
-        margin-top: 96px;
     }
 
     #sub-display-text p {
@@ -128,15 +137,11 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
-
-    #display-text {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
 @media (max-width: 700px) {
+
+    #main-display-text {
+        font-size: 3.5rem;
+    }
 
     .event {
         width: 100%;
@@ -148,18 +153,5 @@
 
     .event .pipe {
         display: none;
-    }
-
-    #display-text {
-        align-items: center;
-    }
-
-
-    #sub-display-text {
-        text-align: center;
-    }
-
-    #sub-display-text p {
-        display: inline-block;
     }
 }

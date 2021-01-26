@@ -25,64 +25,69 @@
 
         <header id="main-header" class="main-content-grid">
 
-            <a href="/"><img src="/images/logo.png" /></a>
+            <a id="main-logo" href="/"><img src="/images/logo.png" /></a>
 
-            <nav>
-                <ul>
-                    <li><a href="/about">ABOUT</a></li>
-                    <!-- <li><a href="/projects">PROJECTS</a></li> -->
-                </ul>
-            </nav>
+            <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" /></button>
+
+            <div id="main-navigation">
+
+                <nav>
+                    <ul>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                    </ul>
+                </nav>
+
+                <div id="main-links">
+
+                    <a href="mailto:henrytwistprojects@gmail.com">
+
+                        <img src="/images/icons/email.png" />
+                    </a>
+
+                    <a href="https://github.com/hctwist" target="_blank">
+
+                        <img src="/images/icons/github.png" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+
+                        <img src="/images/icons/linkedin.png" />
+                    </a>
+                </div>
+            </div>
         </header>
 
         
-<div class="main-content-grid">
+<div class="main-content-grid" id="about-root">
 
-    <div id="about-main">
+    <img id="about-image" src="/images/about.png" />
 
-        <div id="about-image">
+    <h1>Henry Charles Twist.</h1>
+    <a href="https://goo.gl/maps/PQtbAyUDsDGrDAF58" target="_blank" id="about-location">
 
-            <img src="/images/about.png" />
-        </div>
+        <img src="/images/icons/location.png" />
+        <p>Bath, United Kingdom</p>
+    </a>
+</div>
 
-        <div id="about-details">
+<div id="about-summary">
 
-            <h1>Henry Charles Twist.</h1>
-            <a href="https://goo.gl/maps/PQtbAyUDsDGrDAF58" target="_blank" id="about-location" class="labelled-icon">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet libero nisl, eget condimentum lacus viverra non. Nulla hendrerit, purus eget convallis pellentesque, justo lorem hendrerit diam, non gravida tortor magna a enim. Ut ipsum sapien, vehicula ac justo in, rhoncus tempus augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc suscipit porttitor lorem, eget suscipit quam euismod ac.
+    </p>
+</div>
 
-                <img src="/images/icons/location.png" />
-                <p>Bath, United Kingdom</p>
-            </a>
+<div id="about-cv">
+    
+    <a>
 
-            <a href="mailto:henrytwistprojects@gmail.com" class="labelled-icon panel">
+        <img src="/images/icons/cv.png" />
+        <p>Take a look at my CV</p>
+    </a>
+</div>
 
-                <img src="/images/icons/email.png" />
-                <p>henrytwistprojects@gmail.com</p>
-            </a>
-
-            <a href="https://github.com/hctwist" target="_blank" class="labelled-icon panel">
-
-                <img src="/images/icons/github.png" />
-                <p>GitHub</p>
-            </a>
-
-            <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank" class="labelled-icon panel">
-
-                <img src="/images/icons/linkedin.png" />
-                <p>LinkedIn</p>
-            </a>
-
-            <!-- <p id="about-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet libero nisl, eget condimentum lacus viverra non. Nulla hendrerit, purus eget convallis pellentesque, justo lorem hendrerit diam, non gravida tortor magna a enim. Ut ipsum sapien, vehicula ac justo in, rhoncus tempus augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc suscipit porttitor lorem, eget suscipit quam euismod ac.
-            </p>
-
-            <a class="labelled-icon panel">
-
-                <img src="/images/icons/cv.png" />
-                <p>Take a look at my CV</p>
-            </a> -->
-        </div>
-    </div><h3 class="skill-category-heading project-subheading">PROGRAMMING LANGUAGES</h3>
+<div class="main-content-grid" id="skills-container"><h3 class="skill-category-heading project-subheading">PROGRAMMING LANGUAGES</h3>
 
 <div class="skills"><div>
                 <p class="skill-title">C#</p>
@@ -143,7 +148,7 @@
             </div><div>
                 <p class="skill-title">R</p>
 
-                <img class="skill-icon" src="/images/skills/R.png" />
+                <img class="skill-icon" src="/images/skills/r.png" />
 
                 <div class="skill-level-container"><div class="skill-level" style="width: calc(0.6 * 100%)"></div>
                 </div>
@@ -237,6 +242,13 @@
                 <div class="skill-level-container"><div class="skill-level" style="width: calc(0.65 * 100%)"></div>
                 </div>
             </div><div>
+                <p class="skill-title">Firebase</p>
+
+                <img class="skill-icon" src="/images/skills/firebase.png" />
+
+                <div class="skill-level-container"><div class="skill-level" style="width: calc(0.45 * 100%)"></div>
+                </div>
+            </div><div>
                 <p class="skill-title">HTML5</p>
 
                 <img class="skill-icon" src="/images/skills/html5.png" />
@@ -260,5 +272,9 @@
             </div></div>
 </div>
 
+
+        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
+
+        <script src="/js/hamburger.js"></script>
     </body>
 </html>

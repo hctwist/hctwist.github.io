@@ -1,68 +1,109 @@
-.main-content-grid {
-    margin-bottom: var(--layout-margin-bottom);
-}
-
-#about-main {
-    display: flex;
-
+#about-root {
     margin-top: var(--layout-margin-top);
-    margin-bottom: var(--content-margin);
 }
 
 #about-image {
-    width: 50%;
+    display: block;
+
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+
+    background: #b4d7ce;
+    border-radius: 10000px;
+}
+@media (max-width: 1600px) {
+
+    #about-image {
+        width: 172px;
+        height: 172px;
+    }
 }
 
-#about-image img {
-    height: 720px;
-}
+h1 {
+    text-align: center;
 
-#about-details {
-    width: 50%;
-}
-
-#about-details h2 {
-    margin-bottom: 16px;
-}
-
-#about-details a {
-    text-decoration: none;
+    margin-top: 32px;
 }
 
 #about-location {
-    margin-bottom: 48px;
-}
+    display: flex;
+    justify-content: center;
 
-.labelled-icon {
-    display: block;
-    box-sizing: border-box;
-
-    width: 100%;
+    gap: 16px;
     margin-top: 16px;
 
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-decoration: none;
 }
 
-.labelled-icon img {
-    width: 24px;
-    height: 24px;
+#about-location img {
+    width: var(--medium-icon-size);
+    height: var(--medium-icon-size);;
 
     opacity: var(--icon-opacity);
 }
 
-.labelled-icon p {
-    margin-left: 16px;
-}
-
-.labelled-icon > * {
-    display: inline-block;
-    vertical-align: middle;
+#about-location p {
+    color: var(--text-color-secondary);
 }
 
 #about-summary {
+    padding: 72px 0;
+    margin-top: 72px;
+
+    background: var(--panel-color);
+}
+
+#about-summary p {
+    text-align: center;
+
+    width: 40%;
+    margin: 0 auto;
+}
+@media(max-width: 1200px) {
+
+    #about-summary p {
+        width: 80%;
+    }
+}
+
+#about-cv {
+    text-align: center;
+
+    transform: translateY(-50%);
+}
+
+#about-cv a {
+    display: inline-block;
+
+    padding: 16px 24px;
+
+    border-radius: var(--corner-radius);
+    background: var(--secondary-color);
+}
+
+#about-cv a > * {
+    display:inline;
+    vertical-align: middle;
+}
+
+#about-cv p {
+    margin-left: 16px;
+
+    font-family: var(--heading-font);
+    color: var(--text-color-inverse);
+}
+
+#about-cv img {
+    width: var(--medium-icon-size);
+    height: var(--medium-icon-size);
+
+    opacity: 0.9;
+}
+
+#skills-container {
     margin-top: var(--content-margin);
+    margin-bottom: var(--layout-margin-bottom);
 }
 
 .skill-category-heading {
@@ -114,15 +155,4 @@
 
 .skill-level-container {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 1200px) {
-
-    #about-image {
-        display: none;
-    }
-
-    #about-details {
-        width: 100%;
-    }
 }

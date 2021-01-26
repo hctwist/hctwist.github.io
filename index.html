@@ -25,29 +25,47 @@
 
         <header id="main-header" class="main-content-grid">
 
-            <a href="/"><img src="/images/logo.png" /></a>
+            <a id="main-logo" href="/"><img src="/images/logo.png" /></a>
 
-            <nav>
-                <ul>
-                    <li><a href="/about">ABOUT</a></li>
-                    <!-- <li><a href="/projects">PROJECTS</a></li> -->
-                </ul>
-            </nav>
+            <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" /></button>
+
+            <div id="main-navigation">
+
+                <nav>
+                    <ul>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                    </ul>
+                </nav>
+
+                <div id="main-links">
+
+                    <a href="mailto:henrytwistprojects@gmail.com">
+
+                        <img src="/images/icons/email.png" />
+                    </a>
+
+                    <a href="https://github.com/hctwist" target="_blank">
+
+                        <img src="/images/icons/github.png" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+
+                        <img src="/images/icons/linkedin.png" />
+                    </a>
+                </div>
+            </div>
         </header>
 
-        <div class="main-content-grid">
+        <div class="main-content-grid" id="home-root">
 
-    <div id="display-text">
+    <p id="main-display-text">Hello<span>.</span></p>
 
-        <p id="main-display-text">Henry<br />Twist<span>.</span></p>
+    <div id="sub-display-text">
 
-        <div id="sub-display-text">
-
-            <p>MATHEMATICIAN.</p>
-            <p>DEVELOPER.</p>
-            <p>DESIGNER.</p>
-            <p>TECH ENTHUSIAST.</p>
-        </div>
+        <p class="prefix">I AM A</p>
+        <p class="suffix">MATHEMATICIAN. DESIGNER. DEVELOPER. TECH ENTHUSIAST</p>
     </div>
 
     <div id="timeline"><div class="date">
@@ -66,7 +84,7 @@
                 
                     <div class="event left">
                         <div class="panel">
-                            <p class="content with-subheading">Learnt C# and started working with UWP apps</p>
+                            <p class="content with-subheading">Learnt C# and started working on UWP apps</p>
                             <h3>PROJECT ACQUIESCE</h3>
                         </div>
                         <div class="pipe"></div>
@@ -281,6 +299,11 @@
 </div>
 
 <script src="/js/timeline.js"></script>
+<script src="/js/display-text.js"></script>
 
+
+        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
+
+        <script src="/js/hamburger.js"></script>
     </body>
 </html>

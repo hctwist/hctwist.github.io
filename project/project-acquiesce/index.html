@@ -13,7 +13,7 @@
         <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-        <title></title>
+        <title>Project Acquiesce</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -25,32 +25,66 @@
 
         <header id="main-header" class="main-content-grid">
 
-            <a href="/"><img src="/images/logo.png" /></a>
+            <a id="main-logo" href="/"><img src="/images/logo.png" /></a>
 
-            <nav>
-                <ul>
-                    <li><a href="/about">ABOUT</a></li>
-                    <!-- <li><a href="/projects">PROJECTS</a></li> -->
-                </ul>
-            </nav>
+            <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" /></button>
+
+            <div id="main-navigation">
+
+                <nav>
+                    <ul>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                    </ul>
+                </nav>
+
+                <div id="main-links">
+
+                    <a href="mailto:henrytwistprojects@gmail.com">
+
+                        <img src="/images/icons/email.png" />
+                    </a>
+
+                    <a href="https://github.com/hctwist" target="_blank">
+
+                        <img src="/images/icons/github.png" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+
+                        <img src="/images/icons/linkedin.png" />
+                    </a>
+                </div>
+            </div>
         </header>
 
         
-<div class="main-content-grid" id="project-header">
+<div class="main-content-grid">
 
-    <div id="project-heading-container">
+    <div id="project-header-container">
 
-        <h1 id="project-heading">Project Acquiesce</h1><p class="status-tag status-tag-ongoing">ONGOING</p>
-<h3>TEST</h3>
-    </div></div><div id="project-content" class="main-content-grid">
+        <div id="project-heading-container">
 
-    <p>Test content</p>
+            <h1 id="project-heading">Project Acquiesce</h1>
+            <h3></h3>
+        </div><p class="status-tag status-tag-ongoing">ONGOING</p>
+</div>
 
+    <div id="project-content">
+
+        
+    </div>
+
+    <div id="project-images"><img src="/images/projects/acquiesce/banner.jpg" class="banner" /></div>
 
     <div id="project-sources"></div>
 
-    <div id="project-skills"></div>
+    <div id="project-skills"><img src="/images/skills/c-sharp.png" alt="C#" class="skill" /><img src="/images/skills/uwp.png" alt="UWP" class="skill" /></div>
 </div>
 
+
+        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
+
+        <script src="/js/hamburger.js"></script>
     </body>
 </html>
