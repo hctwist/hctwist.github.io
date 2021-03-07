@@ -2,23 +2,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    gap: 5vh 2.5vh;
+    gap: 2.5vh;
     margin-top: var(--layout-margin-top);
     margin-bottom: var(--layout-margin-bottom);
 }
 
-.panel {
+.project {
     padding: 0;
-
-    border-radius: var(--corner-radius);
-    background-color: var(--panel-color);
-    text-decoration: none;
-
-    transition: background-color var(--transition-duration-panel);
 }
 
-.project-banner img {
+.project img {
     width: 100%;
+
+    border-radius: var(--corner-radius) var(--corner-radius) 0 0;
 }
 
 .project-heading {

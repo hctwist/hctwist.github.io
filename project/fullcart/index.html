@@ -5,88 +5,108 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#1c1e1d">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#151716">
+        <meta name="msapplication-TileColor" content="#00aba9">
 
         <title>FullCart</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="/styles/base.css" /><link rel="stylesheet" href="/project/project.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/styles/base.css" />
+        <link rel="stylesheet" href="/styles/baselayout.css" />
+        <link rel="stylesheet" href="/styles/status-tags.css" /><link rel="stylesheet" href="/project/project.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
 
-        <header id="main-header" class="main-content-grid">
+        <div id="gridline-box"></div>
 
-            <a id="main-logo" href="/"><img src="/images/logo.png" /></a>
+        <div id="main-header-container">
 
-            <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" /></button>
+            <header id="main-header" class="main-content-grid">
 
-            <div id="main-navigation">
+                <a id="main-logo" href="/">
 
-                <nav>
-                    <ul>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li><a href="/projects">PROJECTS</a></li>
-                    </ul>
-                </nav>
+                    <img src="/images/logo.png" alt="Logo" />
+                    <img class="colored" src="/images/logo-colored.png" />
+                </a>
 
-                <div id="main-links">
+                <p id="main-logo-text">Henry Twist.</p>
 
-                    <a href="mailto:henrytwistprojects@gmail.com">
+                <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" alt="Menu button" /></button>
 
-                        <img src="/images/icons/email.png" />
-                    </a>
+                <div id="main-navigation">
 
-                    <a href="https://github.com/hctwist" target="_blank">
+                    <nav>
+                        <ul>
+                            <li><a href="/about">ABOUT</a></li>
+                            <li><a href="/projects">PROJECTS</a></li>
+                        </ul>
+                    </nav>
 
-                        <img src="/images/icons/github.png" />
-                    </a>
+                    <div id="main-links">
 
-                    <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+                        <a href="mailto:henrytwistprojects@gmail.com">
 
-                        <img src="/images/icons/linkedin.png" />
-                    </a>
+                            <img src="/images/icons/email.png" alt="Email me" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/henry-twist-77b464151" target="_blank">
+
+                            <img src="/images/icons/linkedin.png" alt="LinkedIn" />
+                        </a>
+
+                        <a href="https://github.com/hctwist" target="_blank">
+
+                            <img src="/images/icons/github.png" alt="GitHub" />
+                        </a>
+
+                        <a href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">
+
+                            <img src="/images/icons/stackoverflow.png" alt="StackOverflow" />
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
-        
-<div class="main-content-grid">
+        <div class="main-content-grid" id="main-content">
 
-    <div id="project-header-container">
+            
+<div id="project-header-container">
 
-        <div id="project-heading-container">
+    <div id="project-heading-container">
 
-            <h1 id="project-heading">FullCart</h1>
-            <h3></h3>
-        </div><p class="status-tag status-tag-released">RELEASED</p>
+        <h1 id="project-heading">FullCart</h1>
+        <h3></h3>
+    </div><p class="status-tag status-tag-archived">ARCHIVED</p></div>
+
+<div id="project-content">
+
+    <p>This project has been rereleased and can now be found <a href="/project/fullcart-redesign">here</a></p>
+
 </div>
 
-    <div id="project-content">
+<div id="project-images"><div class="project-image banner">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, viverra eget enim eget, luctus tincidunt sem. Integer tempus porta leo eget dignissim. Sed sagittis arcu eu enim consequat, eget gravida lectus cursus. Cras justo ligula, rhoncus a justo id, dignissim finibus ex. In nunc justo, dignissim et mollis at, ultrices ut libero. Fusce vel dui augue. Proin sed ornare erat.</p>
+            <img src="/images/projects/fullcart/banner-1.jpg"/></div><div class="project-image ">
 
-    </div>
+            <img src="/images/projects/fullcart/shot-1.jpg"/></div><div class="project-image ">
 
-    <div id="project-images"><img src="/images/projects/fullcart/banner.jpg" class="banner" /><img src="/images/projects/fullcart/shot-1.jpg" class="shot" /><img src="/images/projects/fullcart/shot-2.jpg" class="shot" /></div>
+            <img src="/images/projects/fullcart/shot-2.jpg"/></div><div class="project-image banner">
 
-    <div id="project-sources"><a class="project-badge" href="https://github.com/hctwist/full-cart" target="_blank">
-                <img alt="View my GitHub repository" src="/images/badges/github.png" />
-            </a><a class="project-badge" href="https://play.google.com/store/apps/details?id=com.twisthenry8gmail.fullcart&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
-                <img alt="Get it on Google Play" src="/images/badges/play-store.png" />
-            </a></div>
+            <img src="/images/projects/fullcart/banner-2.jpg"/></div></div>
 
-    <div id="project-skills"><img src="/images/skills/java.png" alt="Java" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div>
-</div>
+<div id="project-sources" class="flex-gap"></div>
 
+<div id="project-skills" class="flex-gap"><img src="/images/skills/java.png" alt="Java" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div>
+
+        </div>
 
         <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
 

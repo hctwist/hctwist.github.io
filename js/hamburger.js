@@ -17,18 +17,14 @@ function onClickHamburger() {
 
 function hideMenu() {
 
-    // $("#main-navigation").css({"visibility": "hidden", "opacity": "0"});
-    // $("#hamburger-menu-cover").css({"visibility": "hidden", "opacity": "0"});
-
     $("#main-navigation").removeClass("menu-show");
     $("#hamburger-menu-cover").removeClass("menu-show");
+    $("#hamburger img").attr("src", "/images/icons/hamburger.svg");
 }
 
 function showMenu() {
 
-    // $("#main-navigation").css({"visibility": "visible", "opacity": "1"});
-    // $("#hamburger-menu-cover").css({"visibility": "visible", "opacity": "1"});
-
     $("#main-navigation").addClass("menu-show");
     $("#hamburger-menu-cover").addClass("menu-show");
+    $("#hamburger img").attr("src", "/images/icons/close.svg");
 }

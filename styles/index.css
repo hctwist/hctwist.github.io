@@ -1,11 +1,9 @@
-#home-root {
-    margin-top: var(--layout-margin-top);
-}
-
 #main-display-text {
     text-align: center;
 
+    margin-bottom: 32px;
     font-size: 5.5em;
+
     font-family: "Lato", sans-serif;
 }
 
@@ -15,14 +13,13 @@
 }
 
 #sub-display-text {
+    --gap: 32px;
+
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    gap: 32px;
-    margin-top: 32px;
 }
 
 #sub-display-text p {
