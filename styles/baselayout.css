@@ -1,14 +1,6 @@
-
-:root {
-
-    --gridline-color: rgba(255, 255, 255, 0.15);
-    --gridline-width: 1px;
-}
-
 #main-header-container {
 
     padding-bottom: 2vh;
-    border-bottom: var(--gridline-width) solid var(--gridline-color);
 }
 
 #main-header {
@@ -46,13 +38,6 @@
 
 #main-logo:hover img.colored {
     opacity: 1;
-}
-
-#main-logo-text {
-    margin-left: 24px;
-
-    font-size: 1.5em;
-    font-family: "Lato", sans-serif;
 }
 
 #main-navigation {
@@ -128,21 +113,6 @@
 
 #main-content {
     margin-top: 8vh;
-}
-
-#gridline-box {
-    position: fixed;
-    box-sizing: border-box;
-    z-index: -10;
-
-    width: 90%;
-    height: 100%;
-    top: 0;
-
-    margin-left: 5%;
-
-    border-left: var(--gridline-width) solid var(--gridline-color);
-    border-right: var(--gridline-width) solid var(--gridline-color);
 }
 
 @media(max-width: 1200px) {
