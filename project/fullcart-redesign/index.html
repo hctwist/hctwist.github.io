@@ -15,11 +15,12 @@
         <title>FullCart Redesign</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
-        <link rel="stylesheet" href="/styles/status-tags.css" /><link rel="stylesheet" href="/project/project.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/styles/main-header.css" /><link rel="stylesheet" href="/project/project.css" /><link rel="stylesheet" href="/styles/status-tags.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- PhotoSwipe -->
         <link rel="stylesheet" href="/photo-swipe/photoswipe.css">
@@ -29,66 +30,20 @@
     </head>
 
     <body>
+        <header id="main-header">
 
-        <div id="main-header-container">
+    <a id="main-logo" href="/">
 
-            <header id="main-header" class="main-content-grid">
+        <img src="/images/logo.png" alt="Logo" />
+        <img class="colored" src="/images/logo-colored.png" />
+    </a>
+</header>
+<div id="project-heading" class="main-content-grid">
 
-                <a id="main-logo" href="/">
+    <h1>FullCart Redesign</h1>
+    <div id="project-skills"><img src="/images/skills/kotlin.png" alt="Kotlin" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/firebase.png" alt="Firebase" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div><h3 class="status-tag status-tag-beta">BETA</h3></div>
 
-                    <img src="/images/logo.png" alt="Logo" />
-                    <img class="colored" src="/images/logo-colored.png" />
-                </a>
-
-                <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" alt="Menu button" /></button>
-
-                <div id="main-navigation">
-
-                    <nav>
-                        <ul>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/projects"class="selected">PROJECTS</a></li>
-                        </ul>
-                    </nav>
-
-                    <div id="main-links">
-
-                        <a href="mailto:henrytwistprojects@gmail.com">
-
-                            <img src="/images/icons/email.png" alt="Email me" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/henry-twist" target="_blank">
-
-                            <img src="/images/icons/linkedin.png" alt="LinkedIn" />
-                        </a>
-
-                        <a href="https://github.com/hctwist" target="_blank">
-
-                            <img src="/images/icons/github.png" alt="GitHub" />
-                        </a>
-
-                        <a href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">
-
-                            <img src="/images/icons/stackoverflow.png" alt="StackOverflow" />
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <div class="main-content-grid" id="main-content">
-
-            
-<div id="project-header-container">
-
-    <div id="project-heading-container">
-
-        <h1 id="project-heading">FullCart Redesign</h1>
-        <h3></h3>
-    </div><p class="status-tag status-tag-beta">BETA</p></div>
-
-<div id="project-content">
+<div id="project-content" class="main-content-grid">
 
     <p>Development was started on FullCart in 2018, but stopped being maintained after its initial release.
 This is a full redesign and rerelease completely overhauling the UI and keeping up with modern Android development practices.
@@ -97,25 +52,24 @@ It is available on the Play Store as a beta at the moment, with a lot more plann
 
 </div>
 
-<div id="project-images"><div class="project-image banner">
+<div id="project-images" class="main-content-grid"><div class="project-image banner">
 
-            <img src="/images/projects/fullcart-redesign/banner-1.jpg"/></div><div class="project-image ">
+            <img src="/images/projects/fullcart-redesign/banner-1.jpg"/>
+        </div><div class="project-image ">
 
-            <img src="/images/projects/fullcart-redesign/shot-1.jpg"/></div><div class="project-image ">
+            <img src="/images/projects/fullcart-redesign/shot-1.jpg"/>
+        </div><div class="project-image ">
 
-            <img src="/images/projects/fullcart-redesign/shot-2.jpg"/></div><div class="project-image ">
+            <img src="/images/projects/fullcart-redesign/shot-2.jpg"/>
+        </div><div class="project-image ">
 
-            <img src="/images/projects/fullcart-redesign/shot-3.jpg"/></div><div class="project-image ">
+            <img src="/images/projects/fullcart-redesign/shot-3.jpg"/>
+        </div><div class="project-image ">
 
-            <img src="/images/projects/fullcart-redesign/shot-4.jpg"/></div></div>
+            <img src="/images/projects/fullcart-redesign/shot-4.jpg"/>
+        </div></div>
 
-<div id="project-sources" class="flex-gap"><a class="project-badge" href="https://github.com/hctwist/full-cart" target="_blank">
-            <img alt="View the code on GitHub" src="/images/badges/github.png" />
-        </a><a class="project-badge" href="https://play.google.com/store/apps/details?id=uk.henrytwist.fullcart&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
-            <img alt="Get it on Google Play" src="/images/badges/play-store.png" />
-        </a></div>
-
-<div id="project-skills" class="flex-gap"><img src="/images/skills/kotlin.png" alt="Kotlin" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/firebase.png" alt="Firebase" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div>
+<ul id="project-sources" class="link-set main-content-grid"><li><a class="h1" href="https://github.com/hctwist/full-cart" target="_blank">View on GitHub</a></li><li><a class="h1" href="https://play.google.com/store/apps/details?id=uk.henrytwist.fullcart&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">View on Google Play</a></li></ul>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -177,11 +131,8 @@ It is available on the Play Store as a beta at the moment, with a lot more plann
             <div class="pswp__caption">
                 <div class="pswp__caption__center"></div>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 <script>
@@ -276,10 +227,5 @@ It is available on the Play Store as a beta at the moment, with a lot more plann
     });
 </script>
 
-        </div>
-
-        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
-
-        <script src="/js/hamburger.js"></script>
     </body>
 </html>

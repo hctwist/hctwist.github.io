@@ -15,11 +15,12 @@
         <title>Projects | Henry Twist</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
-        <link rel="stylesheet" href="/styles/status-tags.css" /><link rel="stylesheet" href="projects.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/styles/main-header.css" /><link rel="stylesheet" href="projects.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- PhotoSwipe -->
         <link rel="stylesheet" href="/photo-swipe/photoswipe.css">
@@ -29,57 +30,7 @@
     </head>
 
     <body>
-
-        <div id="main-header-container">
-
-            <header id="main-header" class="main-content-grid">
-
-                <a id="main-logo" href="/">
-
-                    <img src="/images/logo.png" alt="Logo" />
-                    <img class="colored" src="/images/logo-colored.png" />
-                </a>
-
-                <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" alt="Menu button" /></button>
-
-                <div id="main-navigation">
-
-                    <nav>
-                        <ul>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/projects"class="selected">PROJECTS</a></li>
-                        </ul>
-                    </nav>
-
-                    <div id="main-links">
-
-                        <a href="mailto:henrytwistprojects@gmail.com">
-
-                            <img src="/images/icons/email.png" alt="Email me" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/henry-twist" target="_blank">
-
-                            <img src="/images/icons/linkedin.png" alt="LinkedIn" />
-                        </a>
-
-                        <a href="https://github.com/hctwist" target="_blank">
-
-                            <img src="/images/icons/github.png" alt="GitHub" />
-                        </a>
-
-                        <a href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">
-
-                            <img src="/images/icons/stackoverflow.png" alt="StackOverflow" />
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <div class="main-content-grid" id="main-content">
-
-            
+        
 <div id="projects-container"><a class="project panel" href="/project/dissertation/">
 
             <img src="/images/projects/dissertation/banner-1.jpg" />
@@ -87,7 +38,7 @@
             <h2 class="project-heading">Optimisation of Neural Network Architecture</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-released">RELEASED</p></div>
+                <h3 class="project-subheading">&nbsp;</h3><h3 class="status-tag status-tag-released">RELEASED</h3></div>
         </a><a class="project panel" href="/project/project-barry/">
 
             <img src="/images/projects/barry/banner-1.jpg" />
@@ -95,7 +46,7 @@
             <h2 class="project-heading">Ray</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">PROJECT BARRY</h3><p class="status-tag status-tag-released">RELEASED</p></div>
+                <h3 class="project-subheading">PROJECT BARRY</h3><h3 class="status-tag status-tag-released">RELEASED</h3></div>
         </a><a class="project panel" href="/project/fullcart-redesign/">
 
             <img src="/images/projects/fullcart-redesign/banner-1.jpg" />
@@ -103,7 +54,7 @@
             <h2 class="project-heading">FullCart Redesign</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-beta">BETA</p></div>
+                <h3 class="project-subheading">&nbsp;</h3><h3 class="status-tag status-tag-beta">BETA</h3></div>
         </a><a class="project panel" href="/project/project-consolidate/">
 
             <img src="/images/projects/consolidate/banner-1.jpg" />
@@ -111,7 +62,7 @@
             <h2 class="project-heading">henrytwist.uk</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">PROJECT CONSOLIDATE</h3><p class="status-tag status-tag-released">RELEASED</p></div>
+                <h3 class="project-subheading">PROJECT CONSOLIDATE</h3><h3 class="status-tag status-tag-released">RELEASED</h3></div>
         </a><a class="project panel" href="/project/project-acquiesce/">
 
             <img src="/images/projects/acquiesce/banner-1.jpg" />
@@ -119,7 +70,7 @@
             <h2 class="project-heading">Project Acquiesce</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-alpha">ALPHA</p></div>
+                <h3 class="project-subheading">&nbsp;</h3><h3 class="status-tag status-tag-alpha">ALPHA</h3></div>
         </a><a class="project panel" href="/project/project-source/">
 
             <img src="/images/projects/source/banner-1.jpg" />
@@ -135,7 +86,7 @@
             <h2 class="project-heading">Weekly</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">PROJECT PHOENIX</h3><p class="status-tag status-tag-dormant">DORMANT</p></div>
+                <h3 class="project-subheading">PROJECT PHOENIX</h3><h3 class="status-tag status-tag-dormant">DORMANT</h3></div>
         </a><a class="project panel" href="/project/fullcart/">
 
             <img src="/images/projects/fullcart/banner-1.jpg" />
@@ -143,13 +94,8 @@
             <h2 class="project-heading">FullCart</h2>
 
             <div class="project-extras">
-                <h3 class="project-subheading">&nbsp;</h3><p class="status-tag status-tag-archived">ARCHIVED</p></div>
+                <h3 class="project-subheading">&nbsp;</h3><h3 class="status-tag status-tag-archived">ARCHIVED</h3></div>
         </a></div>
 
-        </div>
-
-        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
-
-        <script src="/js/hamburger.js"></script>
     </body>
 </html>

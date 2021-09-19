@@ -15,11 +15,12 @@
         <title>Optimisation of Neural Network Architecture</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
-        <link rel="stylesheet" href="/styles/status-tags.css" /><link rel="stylesheet" href="/project/project.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/styles/main-header.css" /><link rel="stylesheet" href="/project/project.css" /><link rel="stylesheet" href="/styles/status-tags.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- PhotoSwipe -->
         <link rel="stylesheet" href="/photo-swipe/photoswipe.css">
@@ -29,82 +30,31 @@
     </head>
 
     <body>
+        <header id="main-header">
 
-        <div id="main-header-container">
+    <a id="main-logo" href="/">
 
-            <header id="main-header" class="main-content-grid">
+        <img src="/images/logo.png" alt="Logo" />
+        <img class="colored" src="/images/logo-colored.png" />
+    </a>
+</header>
+<div id="project-heading" class="main-content-grid">
 
-                <a id="main-logo" href="/">
+    <h1>Optimisation of Neural Network Architecture</h1>
+    <div id="project-skills"><img src="/images/skills/matlab.png" alt="MATLAB" class="skill" /><img src="/images/skills/r.png" alt="R" class="skill" /><img src="/images/skills/latex.png" alt="LaTeX" class="skill" /></div><h3 class="status-tag status-tag-released">RELEASED</h3></div>
 
-                    <img src="/images/logo.png" alt="Logo" />
-                    <img class="colored" src="/images/logo-colored.png" />
-                </a>
-
-                <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" alt="Menu button" /></button>
-
-                <div id="main-navigation">
-
-                    <nav>
-                        <ul>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/projects"class="selected">PROJECTS</a></li>
-                        </ul>
-                    </nav>
-
-                    <div id="main-links">
-
-                        <a href="mailto:henrytwistprojects@gmail.com">
-
-                            <img src="/images/icons/email.png" alt="Email me" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/henry-twist" target="_blank">
-
-                            <img src="/images/icons/linkedin.png" alt="LinkedIn" />
-                        </a>
-
-                        <a href="https://github.com/hctwist" target="_blank">
-
-                            <img src="/images/icons/github.png" alt="GitHub" />
-                        </a>
-
-                        <a href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">
-
-                            <img src="/images/icons/stackoverflow.png" alt="StackOverflow" />
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <div class="main-content-grid" id="main-content">
-
-            
-<div id="project-header-container">
-
-    <div id="project-heading-container">
-
-        <h1 id="project-heading">Optimisation of Neural Network Architecture</h1>
-        <h3></h3>
-    </div><p class="status-tag status-tag-released">RELEASED</p></div>
-
-<div id="project-content">
+<div id="project-content" class="main-content-grid">
 
     <p>My university dissertation focused on statistically optimising neural networks.</p>
 
 </div>
 
-<div id="project-images"><div class="project-image banner">
+<div id="project-images" class="main-content-grid"><div class="project-image banner">
 
-            <img src="/images/projects/dissertation/banner-1.jpg"/></div></div>
+            <img src="/images/projects/dissertation/banner-1.jpg"/>
+        </div></div>
 
-<div id="project-sources" class="flex-gap"><a class="icon-button" href="/downloads/optimisation-of-neural-network-architecture.pdf" target="_blank">
-
-            <img src="/images/icons/open.svg" />
-            <p>Open</p>
-        </a></div>
-
-<div id="project-skills" class="flex-gap"><img src="/images/skills/matlab.png" alt="MATLAB" class="skill" /><img src="/images/skills/r.png" alt="R" class="skill" /><img src="/images/skills/latex.png" alt="LaTeX" class="skill" /></div>
+<ul id="project-sources" class="link-set main-content-grid"><li><a class="h1" href="/downloads/optimisation-of-neural-network-architecture.pdf" target="_blank">Open</a></li></ul>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -166,11 +116,8 @@
             <div class="pswp__caption">
                 <div class="pswp__caption__center"></div>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 <script>
@@ -213,10 +160,5 @@
     });
 </script>
 
-        </div>
-
-        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
-
-        <script src="/js/hamburger.js"></script>
     </body>
 </html>

@@ -15,11 +15,12 @@
         <title>Henry Twist</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
-        <link rel="stylesheet" href="/styles/status-tags.css" /><link rel="stylesheet" href="styles/index.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/styles/main-header.css" /><link rel="stylesheet" href="styles/index.css" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- PhotoSwipe -->
         <link rel="stylesheet" href="/photo-swipe/photoswipe.css">
@@ -29,304 +30,55 @@
     </head>
 
     <body>
+        
+<!-- Home -->
+<div id="home-container" class="main-content-grid"><header id="main-header">
 
-        <div id="main-header-container">
+    <a id="main-logo" href="/">
 
-            <header id="main-header" class="main-content-grid">
+        <img src="/images/logo.png" alt="Logo" />
+        <img class="colored" src="/images/logo-colored.png" />
+    </a>
+</header>
+<div id="home-footer">
+        <h1 id="home-quote">I am a Mathematician,<br />Designer and Software Developer</h1>
 
-                <a id="main-logo" href="/">
+        <ul id="home-links" class="link-set">
 
-                    <img src="/images/logo.png" alt="Logo" />
-                    <img class="colored" src="/images/logo-colored.png" />
-                </a>
-
-                <button type="button" id="hamburger" onclick="onClickHamburger()"><img src="/images/icons/hamburger.svg" alt="Menu button" /></button>
-
-                <div id="main-navigation">
-
-                    <nav>
-                        <ul>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/projects">PROJECTS</a></li>
-                        </ul>
-                    </nav>
-
-                    <div id="main-links">
-
-                        <a href="mailto:henrytwistprojects@gmail.com">
-
-                            <img src="/images/icons/email.png" alt="Email me" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/henry-twist" target="_blank">
-
-                            <img src="/images/icons/linkedin.png" alt="LinkedIn" />
-                        </a>
-
-                        <a href="https://github.com/hctwist" target="_blank">
-
-                            <img src="/images/icons/github.png" alt="GitHub" />
-                        </a>
-
-                        <a href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">
-
-                            <img src="/images/icons/stackoverflow.png" alt="StackOverflow" />
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <div class="main-content-grid" id="main-content">
-
-            
-<div id="blob"></div>
-
-<p id="main-display-text">Hello<span>.</span></p>
-
-<div id="sub-display-text" class="flex-gap">
-
-    <p class="prefix">I AM A</p>
-    <p class="suffix">MATHEMATICIAN. DESIGNER. DEVELOPER. TECH ENTHUSIAST</p>
+            <li><a href="mailto:henrytwistprojects@gmail.com">Email me</a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/henry-twist" target="_blank">LinkedIn</a></li>
+            <li><a class="github" href="https://github.com/hctwist" target="_blank">GitHub</a></li>
+            <li><a class="stackoverflow" href="https://stackoverflow.com/users/10082297/henry-twist" target="_blank">StackOverflow</a></li>
+        </ul>
+    </div>
 </div>
 
-<div id="timeline" style="display: none"><div class="date">
-                <p class="content">Now</p>
-            </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <a href="/project/project-consolidate" class="panel">
-                        <p class="content with-subheading">henrytwist.uk launched</p>
-                        <h3>PROJECT CONSOLIDATE</h3>
-                    </a>
-                </div>
-            
-            
-                <div class="event left">
-                    <a href="/project/project-acquiesce" class="panel">
-                        <p class="content with-subheading">Learnt C# and started working on UWP apps</p>
-                        <h3>PROJECT ACQUIESCE</h3>
-                    </a>
-                    <div class="pipe"></div>
-                </div><div class="date">
-                <p class="content">2021</p>
-            </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Built and setup my first home server</p>
-                        <h3></h3>
-                    </div>
-                </div>
-            
-            
-                <div class="event left">
-                    <a href="/project/project-barry" class="panel">
-                        <p class="content with-subheading">Began in-depth research on app architecture</p>
-                        <h3>PROJECT BARRY</h3>
-                    </a>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <a href="/project/weekly" class="panel">
-                        <p class="content with-subheading">Revived Project Weekly with a more scalable app architecture</p>
-                        <h3>PROJECT PHOENIX</h3>
-                    </a>
-                </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content with-subheading">Gained experience working with Firebase whilst making a POS system</p>
-                        <h3>PROJECT IGUANA</h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div><div class="date">
-                <p class="content">2020</p>
-            </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <a href="/project/fullcart" class="panel">
-                        <p class="content with-subheading">Initial release of FullCart</p>
-                        <h3>FULLCART</h3>
-                    </a>
-                </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Graduated with a first class masters degree in Maths</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <a href="/project/dissertation" class="panel">
-                        <p class="content with-subheading">Completed my dissertation</p>
-                        <h3>OPTIMISATION OF NEURAL NETWORK ARCHITECTURE</h3>
-                    </a>
-                </div><div class="date">
-                <p class="content">2019</p>
-            </div>
-            
-            
-                <div class="event left">
-                    <a href="/project/weekly" class="panel">
-                        <p class="content with-subheading">Attempted to work on a third app</p>
-                        <h3>PROJECT WEEKLY</h3>
-                    </a>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <a href="/project/fullcart" class="panel">
-                        <p class="content with-subheading">Began developing a second Android app</p>
-                        <h3>FULLCART</h3>
-                    </a>
-                </div><div class="date">
-                <p class="content">2018</p>
-            </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Started a BSc in Mathematics</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Published my first Android app to the Play Store</p>
-                        <h3></h3>
-                    </div>
-                </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Made my first Android app - PhysIt</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div><div class="date">
-                <p class="content">2015</p>
-            </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Started freelance web design</p>
-                        <h3></h3>
-                    </div>
-                </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Launched a cipher solving website for the National Cipher Challenge</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Built my first PC</p>
-                        <h3></h3>
-                    </div>
-                </div><div class="date">
-                <p class="content">2014</p>
-            </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Experimented with 3D game development in Unity</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Started developing game plugins in Java</p>
-                        <h3></h3>
-                    </div>
-                </div><div class="date">
-                <p class="content">2013</p>
-            </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">My first YouTube channel</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Started selling stock graphics online</p>
-                        <h3></h3>
-                    </div>
-                </div>
-            
-            
-                <div class="event left">
-                    <div class="panel">
-                        <p class="content">Got my first copy of Photoshop CS4</p>
-                        <h3></h3>
-                    </div>
-                    <div class="pipe"></div>
-                </div><div class="date">
-                <p class="content">2012</p>
-            </div>
-            
-            
-                <div class="event right">
-                    <div class="pipe"></div>
-                    <div class="panel">
-                        <p class="content">Created my first HTML only website</p>
-                        <h3></h3>
-                    </div>
-                </div><div class="date">
-                <p class="content">2009</p>
-            </div></div>
+<!-- Projects -->
+<div id="projects-container" class="main-content-grid"><a class="project" href="/project/dissertation/">
 
-<script src="/js/timeline.js"></script>
-<script src="/js/display-text.js"></script>
-<script src="/js/blob.js"></script>
+            <img src="/images/projects/dissertation/banner-1.jpg" />
+        </a><a class="project" href="/project/project-barry/">
 
-        </div>
+            <img src="/images/projects/barry/banner-1.jpg" />
+        </a><a class="project" href="/project/fullcart-redesign/">
 
-        <div id="hamburger-menu-cover" onclick="onClickHamburger()"></div>
+            <img src="/images/projects/fullcart-redesign/banner-1.jpg" />
+        </a><a class="project" href="/project/project-consolidate/">
 
-        <script src="/js/hamburger.js"></script>
+            <img src="/images/projects/consolidate/banner-1.jpg" />
+        </a><a class="project" href="/project/project-acquiesce/">
+
+            <img src="/images/projects/acquiesce/banner-1.jpg" />
+        </a><a class="project" href="/project/project-source/">
+
+            <img src="/images/projects/source/banner-1.jpg" />
+        </a><a class="project" href="/project/weekly/">
+
+            <img src="/images/projects/weekly/banner-1.jpg" />
+        </a><a class="project" href="/project/fullcart/">
+
+            <img src="/images/projects/fullcart/banner-1.jpg" />
+        </a></div>
+
     </body>
 </html>
