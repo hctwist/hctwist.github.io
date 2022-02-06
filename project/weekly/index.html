@@ -16,7 +16,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Noto+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
@@ -30,7 +30,8 @@
     </head>
 
     <body>
-        <header id="main-header">
+        
+<div class="main-content-grid"><header id="main-header">
 
     <a id="main-logo" href="/">
 
@@ -38,14 +39,14 @@
         <img class="colored" src="/images/logo-colored.png" />
     </a>
 </header>
-<div id="project-heading" class="main-content-grid">
+<div id="project-heading">
 
-    <h1>Weekly</h1>
-    <div id="project-skills"><img src="/images/skills/kotlin.png" alt="Kotlin" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div><h3 class="status-tag status-tag-dormant">DORMANT</h3></div>
+		<h1>Weekly</h1>
+		<div id="project-skills"><img src="/images/skills/kotlin.png" alt="Kotlin" class="skill" /><img src="/images/skills/android.png" alt="Android" class="skill" /><img src="/images/skills/sqlite.png" alt="SQLite" class="skill" /></div><h3 class="status-tag status-tag-dormant">DORMANT</h3></div>
 
-<div id="project-content" class="main-content-grid">
+	<div id="project-content">
 
-    <p>Weekly was created as a way to keep track of tasks and goals, but with flexibility.
+		<p>Weekly was created as a way to keep track of tasks and goals, but with flexibility.
 Current goal tracking apps and implementations generally assign a goal to a certain day
 or time which I found unhelpful and unintuitive. So Weekly splits the goal concept
 into two parts: a goal and a task. A task is something to be done on a specific day,
@@ -53,23 +54,24 @@ maybe at a certain time whilst a goal is something to complete over a week, a mo
 These goals can be time based, count based or simply success or failure, but it ensures that
 there isn't any pressure to complete them when you don't feel like it.</p>
 
+	</div>
+
+	<div id="project-images"><div class="project-image banner">
+
+				<img src="/images/projects/weekly/banner-1.jpg"/>
+			</div><div class="project-image ">
+
+				<img src="/images/projects/weekly/shot-1.jpg"/>
+			</div><div class="project-image ">
+
+				<img src="/images/projects/weekly/shot-2.jpg"/>
+			</div><div class="project-image banner">
+
+				<img src="/images/projects/weekly/banner-2.jpg"/>
+			</div></div>
+
+	<ul id="project-sources" class="link-set"><li><a class="button" href="https://github.com/hctwist/weekly" target="_blank">View on GitHub</a></li></ul>
 </div>
-
-<div id="project-images" class="main-content-grid"><div class="project-image banner">
-
-            <img src="/images/projects/weekly/banner-1.jpg"/>
-        </div><div class="project-image ">
-
-            <img src="/images/projects/weekly/shot-1.jpg"/>
-        </div><div class="project-image ">
-
-            <img src="/images/projects/weekly/shot-2.jpg"/>
-        </div><div class="project-image banner">
-
-            <img src="/images/projects/weekly/banner-2.jpg"/>
-        </div></div>
-
-<ul id="project-sources" class="link-set main-content-grid"><li><a class="h1" href="https://github.com/hctwist/weekly" target="_blank">View on GitHub</a></li></ul>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

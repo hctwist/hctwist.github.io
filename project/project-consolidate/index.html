@@ -16,7 +16,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Noto+Sans&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/base.css" />
         <link rel="stylesheet" href="/styles/baselayout.css" />
@@ -30,7 +30,8 @@
     </head>
 
     <body>
-        <header id="main-header">
+        
+<div class="main-content-grid"><header id="main-header">
 
     <a id="main-logo" href="/">
 
@@ -38,14 +39,14 @@
         <img class="colored" src="/images/logo-colored.png" />
     </a>
 </header>
-<div id="project-heading" class="main-content-grid">
+<div id="project-heading">
 
-    <h1>henrytwist.uk</h1>
-    <div id="project-skills"><img src="/images/skills/javascript.png" alt="JavaScript" class="skill" /><img src="/images/skills/css3.png" alt="CSS3" class="skill" /><img src="/images/skills/html5.png" alt="HTML5" class="skill" /></div><h3 class="status-tag status-tag-released">RELEASED</h3></div>
+		<h1>henrytwist.uk</h1>
+		<div id="project-skills"><img src="/images/skills/javascript.png" alt="JavaScript" class="skill" /><img src="/images/skills/css3.png" alt="CSS3" class="skill" /><img src="/images/skills/html5.png" alt="HTML5" class="skill" /></div><h3 class="status-tag status-tag-released">RELEASED</h3></div>
 
-<div id="project-content" class="main-content-grid">
+	<div id="project-content">
 
-    <p>This was a passion project to consolidate all of my recent and notable work in one place.
+		<p>This was a passion project to consolidate all of my recent and notable work in one place.
 It had been a long time since making a website so I decided to make this one from scratch,
 without any libraries or UI components. However I did need something to manage my content
 on the site so I used a SSG (Static Site Generator). I wanted to try out various templating
@@ -53,14 +54,15 @@ languages so I landed on using <a href="https://www.11ty.dev/" target="_blank">1
 overkill for a personal site as some of the other SSGs like Gatsby, whilst still being flexible
 enough.</p>
 
+	</div>
+
+	<div id="project-images"><div class="project-image banner">
+
+				<img src="/images/projects/consolidate/banner-1.jpg"/>
+			</div></div>
+
+	<ul id="project-sources" class="link-set"><li><a class="button" href="https://github.com/hctwist/consolidate" target="_blank">View on GitHub</a></li></ul>
 </div>
-
-<div id="project-images" class="main-content-grid"><div class="project-image banner">
-
-            <img src="/images/projects/consolidate/banner-1.jpg"/>
-        </div></div>
-
-<ul id="project-sources" class="link-set main-content-grid"><li><a class="h1" href="https://github.com/hctwist/consolidate" target="_blank">View on GitHub</a></li></ul>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
